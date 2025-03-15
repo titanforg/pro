@@ -3,7 +3,6 @@ from telethon.tl.types import DocumentAttributeVideo
 from yt_dlp import YoutubeDL
 import os
 import time
-from keep_alive import keep_alive
 
 # اطلاعات ربات
 api_id = 20899157
@@ -91,5 +90,4 @@ async def request_instagram_link(event):
         except Exception as e:
             await sent_message.edit(f"⚠️ خطایی رخ داد: {str(e)}")
 
-keep_alive()
 client.run_until_disconnected()
