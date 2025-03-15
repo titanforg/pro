@@ -1,8 +1,10 @@
 # Base image
 FROM python:3.9-slim
 
-# Install ffmpeg
-RUN apt-get update && apt-get install -y ffmpeg
+# Download static ffmpeg binary
+RUN wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && \
+    tar -xf ffmpeg-release-amd64-static.tar.xz && \
+    mv ffmpeg-*/ffmpeg /usr/local/bin/
 
 # Set working directory
 WORKDIR /app
