@@ -7,7 +7,7 @@ import time
 # اطلاعات ربات
 api_id = 20899157
 api_hash = '4a5fed361ed5a8775e0821f3d8e7f571'
-bot_token = '7127477593:AAGYqOUqqY0sd_GYaskduYlCLg8cTxs2AJQ'
+bot_token = '7127477593:AAGWqOUqqY0sd_GYaskduYlCLg8cTxs2AJQ'
 
 # ایجاد کلاینت Telethon
 client = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
