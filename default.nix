@@ -1,8 +1,8 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> {}}:
 
 pkgs.mkShell {
   buildInputs = [
-    pkgs.glibc
+    pkgs.glibcLatest
     pkgs.ffmpeg
   ];
 }
